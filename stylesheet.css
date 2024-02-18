@@ -1,0 +1,76 @@
+body {
+    background-color: hsl(30, 54%, 90%);
+    margin: 0;
+}
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.box {
+    margin: 4rem auto 0;
+    display: flex;
+    flex-direction: column; /* Ustawia elementy wewnątrz boxa jeden pod drugim */ 
+    align-items: center;
+    width: 420px;
+    height: 900px;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 5rem;
+}
+
+#img1 {
+    margin-top: 1.5rem;
+    height: 160px;
+    border-radius: 8px;
+    width: auto;
+}
+
+#h2{
+    margin: 0;
+    margin-top: 1.5rem;
+    text-align: left;
+    margin-right: 7rem;   
+}
+#p1{
+    margin-left: 2rem;
+    width: 380px;
+    font-size: 0.66rem;
+    white-space: wrap;
+    margin-right: 0.5rem;
+}
+#box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    border-radius: 10px;
+    height: 110px;
+    background-color: hsl(330, 100%, 98%);
+}
+#h5{
+    margin: 0;
+    margin-top: 0.9rem;
+    margin-right: 14rem;
+    margin-bottom: 0.5rem;
+    color: hsl(332, 51%, 32%);
+}
+#ul1{
+    margin: 0;
+    font-size: 0.8rem; 
+}
+#ul1 li {
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+    margin-right: 12rem;
+    white-space: nowrap; /* Zapobiega zawijaniu tekstu */
+    overflow: hidden; 
+    position: relative; /* Ustawienie pozycji dla pseudo-elementu */
+    padding-left: 0.5em; /* Dostosuj odstęp między kropkami a tekstem */
+}
+
+#ul1 li::before {
+    content: "•"; /* Wstawia kropkę jako zawartość przed elementem li */
+    position: absolute;
+    left: 0;
+}
