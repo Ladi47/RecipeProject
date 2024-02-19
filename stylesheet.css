@@ -45,7 +45,7 @@ body {
     align-items: center;
     width: 360px;
     border-radius: 10px;
-    height: 110px;
+    height: 90px;
     background-color: hsl(330, 100%, 98%);
 }
 #h5{
@@ -73,4 +73,31 @@ body {
     content: "•"; /* Wstawia kropkę jako zawartość przed elementem li */
     position: absolute;
     left: 0;
+}
+#ul2{
+    margin: 0;
+    font-size: 0.8rem; 
+}
+#ul2 li {
+    font-size: 0.5rem;
+    margin-bottom: 0.2rem;
+    margin-right: 12rem;
+    white-space: nowrap; /* Zapobiega zawijaniu tekstu */
+    overflow: hidden; 
+    position: relative; /* Ustawienie pozycji dla pseudo-elementu */
+    padding-left: 0.5em; /* Dostosuj odstęp między kropkami a tekstem */
+}
+
+#ul2 li::before {
+    content: "•"; /* Wstawia kropkę jako zawartość przed elementem li */
+    position: absolute;
+    left: 0;
+}
+#h3{
+    color:  hsl(14, 45%, 36%);
+    margin-right: 17rem;
+}
+#ol1{
+    
+    font-size: 0.5rem;
 }
