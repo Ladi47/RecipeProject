@@ -2,15 +2,17 @@ body {
     background-color: hsl(30, 54%, 90%);
     margin: 0;
 }
+
 .young-serif-regular {
     font-family: "Young Serif", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
 .box {
     margin: 4rem auto 0;
     display: flex;
-    flex-direction: column; /* Ustawia elementy wewnątrz boxa jeden pod drugim */ 
+    flex-direction: column;
     align-items: center;
     width: 420px;
     height: 900px;
@@ -26,20 +28,21 @@ body {
     width: auto;
 }
 
-#h2{
+#h2 {
     margin: 0;
     margin-top: 1.5rem;
     text-align: left;
-    margin-right: 7rem;   
+    margin-right: 7rem;
 }
-#p1{
+
+#p1 {
     margin-left: 2rem;
     width: 380px;
-    font-size: 0.66rem;
-    white-space: wrap;
+    font-size: 0.5rem;
     margin-right: 0.5rem;
 }
-#box2{
+
+#box2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,56 +51,110 @@ body {
     height: 90px;
     background-color: hsl(330, 100%, 98%);
 }
-#h5{
+
+#h5 {
     margin: 0;
     margin-top: 0.9rem;
     margin-right: 14rem;
     margin-bottom: 0.5rem;
     color: hsl(332, 51%, 32%);
 }
-#ul1{
+
+#ul1 {
     margin: 0;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
 }
+
 #ul1 li {
     font-size: 0.7rem;
     margin-bottom: 0.2rem;
     margin-right: 12rem;
-    white-space: nowrap; /* Zapobiega zawijaniu tekstu */
-    overflow: hidden; 
-    position: relative; /* Ustawienie pozycji dla pseudo-elementu */
-    padding-left: 0.5em; /* Dostosuj odstęp między kropkami a tekstem */
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding-left: 0.5em;
 }
 
 #ul1 li::before {
-    content: "•"; /* Wstawia kropkę jako zawartość przed elementem li */
+    content: "•";
     position: absolute;
     left: 0;
 }
-#ul2{
+
+#ul2 {
     margin: 0;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
 }
+
 #ul2 li {
     font-size: 0.5rem;
     margin-bottom: 0.2rem;
     margin-right: 12rem;
-    white-space: nowrap; /* Zapobiega zawijaniu tekstu */
-    overflow: hidden; 
-    position: relative; /* Ustawienie pozycji dla pseudo-elementu */
-    padding-left: 0.5em; /* Dostosuj odstęp między kropkami a tekstem */
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding-left: 0.5em;
 }
 
 #ul2 li::before {
-    content: "•"; /* Wstawia kropkę jako zawartość przed elementem li */
+    content: "•";
     position: absolute;
     left: 0;
 }
-#h3{
-    color:  hsl(14, 45%, 36%);
+
+#h3 {
+    color: hsl(14, 45%, 36%);
     margin-right: 17rem;
 }
-#ol1{
+
+#ol1 {
+    margin-top: 1rem;
+    margin: auto;
+    width: 350px; /* Ustawia szerokość kontenera na 300 pikseli */
+    padding-left: 10px; /* Dodaje odstęp z lewej strony */
+    margin-right: 2rem;
     
-    font-size: 0.5rem;
 }
+
+#ol1 li {
+    margin-bottom: 3px;
+    font-size: 0.7rem;
+    overflow-wrap: break-word; /* Zapobiega wyjściu tekstu poza kontener */
+}
+
+#table1 {
+    font-size: 0.7rem;
+    width: 100%; /* Rozszerza tabelę na całą dostępną szerokość */
+    max-width: 360px; /* Ogranicza maksymalną szerokość tabeli */
+    overflow-x: auto; /* Dodaje poziome przewijanie, jeśli tabela jest szersza niż okno przeglądarki */
+    border-collapse: collapse; /* Usuwa odstępy między komórkami */
+}
+#table1 th {
+    padding: 5px;
+    border-bottom: 0.5px solid #ddd;
+    text-align: left;
+    color: hsl(14, 45%, 36%);
+}
+#table1 td {
+    padding: 6px;
+    border-bottom: 0.5px solid #ddd;
+    text-align: left;
+    
+}
+
+#table1 td:last-child {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold; /* Tekst w ostatniej kolumnie jest pogrubiony */
+}
+#p2{
+    margin: auto 0;
+    margin-left: 2rem;
+    width: 380px;
+    font-size: 0.5rem;
+    margin-right: 0.5rem;
+    
+}
+
+
+
+
